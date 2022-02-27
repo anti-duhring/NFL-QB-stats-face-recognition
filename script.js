@@ -56,7 +56,10 @@ async function start(){
         document.querySelector('.img-container').style.width = displaySize.width + 'px'
         document.querySelector('.img-container').style.height = displaySize.height + 'px'
         document.querySelector('.img-container').style.display = 'block'
-
+        
+        // Reseting the stats
+        document.querySelector('#stats-players').innerHTML = '<h2>Stats </h2><small>(data: Sportradar US API)</small>';
+      
         const resizedDetections = faceapi.resizeResults(detection, displaySize)
 
         results = resizedDetections.map(d => faceMatcher.findBestMatch(d.descriptor))
