@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="face-api.min.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="loader" id="loader">
+        Face recognition loading...
+      </div>
+      <div class="content">
+      <div class="upload-body">
+        <div class="upload-content">
+  
+  
+       <label for="imageUpload">Upload the NFL player photo</label>
+         </div>
+      <input type="file" id="imageUpload" name="imageUpload">
+      </div>
+      <div class="stats-players" id="stats-players">
+        <h2>Stats </h2>
+        <small>(data: Sportradar US API)</small>
+      </div>
+    </div>
+      <div class="img-container" id="img-container">
+          <div class="img-content">
+              
+          </div>
+          <canvas id="canvas">
+
+          </canvas>
+      </div>
+</body>
+</html>
