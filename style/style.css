@@ -1,0 +1,84 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: 'PT Sans', sans-serif;
+  }
+  canvas {
+    position: absolute;
+    top:0;
+    left:0;
+  }
+  
+  div#loader {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #000000c2;
+      width: 100vw;
+      height: 100vh;
+      color: white;
+      display: flex;
+      text-shadow: 0px 0px 19px black;
+      justify-content: center;
+      align-items: center;
+      font-size: 2.5em;
+  }
+  input#imageUpload {
+      display: none;
+  }
+  
+  label {
+      background: #002244;
+      padding: 10px 20px;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: .2s;
+  }
+  
+  label:hover {
+      background: #C60C30;
+  }
+  label:active {
+      background: #78071d;
+  }
+  body {
+      background: #B0B7BC;
+  }
+  .img-container {
+    position: relative;
+    margin: 20px;
+    margin-top: 50px;
+      border: 1px solid #002244;
+      box-shadow: 0px 0px 7px 1px #00000066;
+      display:none;
+      
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    row-gap: 40px;
+}
+
+div#stats-players {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.season-player {
+    padding: 5px 15px;
+    border: 1px solid black;
+    margin: 10px;
+}
+.season-player p span {
+    font-weight: bold;
+}
+h2 {
+    margin: 10px 0 0 0;
+}
