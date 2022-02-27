@@ -143,7 +143,7 @@ function loadLabeledImages() {
           for (let i = 1; i <= 4; i++) {
 
 
-              const img = await faceapi.fetchImage(`https://raw.githubusercontent.com/anti-duhring/JavaScript-face-recognition-/main/labeled_images/${label}/${i}.png`)
+              const img = await faceapi.fetchImage(`https://raw.githubusercontent.com/anti-duhring/get-NFL-QB-stats-with-face-recognition-/main/labeled_images/${label}/${i}.png`)
               const detections = await faceapi.detectSingleFace(img).withFaceLandmarks().withFaceDescriptor()
               descriptions.push(detections.descriptor)
           }
